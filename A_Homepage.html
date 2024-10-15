@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Hohlbrot Games</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif; /* Use Quicksand font */
+            text-align: center;
+            padding: 0;
+            background-color: #333; /* Dark grey background */
+            color: white; /* White text */
+            margin: 0;
+        }
+        h1 {
+            font-size: 50px; /* Adjust title size */
+            margin: 0;
+            color: white; /* White text color for the title */
+            line-height: 100px; /* Vertically center the title in the red beam */
+            text-transform: uppercase;
+            font-weight: 600; /* Bolder weight for the title */
+        }
+        #imageContainer {
+            display: flex;
+            justify-content: flex-end; /* Align content to the right */
+            margin-top: 40px; /* Additional space after the red beam */
+            padding-right: 50px; /* Space from the right edge */
+        }
+        .buttonBox {
+            display: flex;
+            flex-direction: column; /* Stack title and images vertically */
+            align-items: center; /* Center the images */
+            padding: 10px;
+            background-color: #8B0000; /* Full dark red background */
+            border-radius: 10px; /* Rounded corners for the box */
+            cursor: pointer; /* Pointer cursor for the box */
+            transition: background-color 0.3s; /* Transition effect on hover */
+            margin-left: 20px; /* Space between the two boxes */
+        }
+        .buttonBox:hover {
+            background-color: rgba(139, 0, 0, 0.8); /* Slightly lighter red on hover */
+        }
+        .images {
+            display: flex; /* Align images next to each other */
+            justify-content: center; /* Center the images */
+        }
+        .buttonBox img {
+            margin: 5px; /* Space between images */
+            width: 100px; /* Smaller width for images */
+            height: 100px; /* Smaller height for images */
+            object-fit: cover;
+        }
+        #topBar {
+            background-color: #8B0000; /* Dark red beam */
+            height: 100px;
+            width: 100%;
+            position: relative;
+        }
+        #homeLogo {
+            position: absolute;
+            top: 50%; /* Lower the logo */
+            left: 20px;
+            transform: translateY(-50%); /* Center vertically */
+            width: 90px;
+            cursor: pointer;
+        }
+        .gameLabel {
+            font-size: 30px; /* Bigger font size for the game label */
+            color: white; /* White text for the label */
+            margin-bottom: 10px; /* Space between label and images */
+            text-align: center; /* Center the label text */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="topBar">
+        <img id="homeLogo" src="https://i.imgur.com/kqabT67.png" alt="Home Logo" onclick="window.location.href='A_Homepage.html'" />
+        <h1>Sir Hohlbrot Games</h1> <!-- Title inside the red beam -->
+    </div>
+
+    <div id="imageContainer">
+        <!-- Die Qual der Wahl Button Box -->
+        <div class="buttonBox" onclick="window.location.href='E_EntwederOder.html'"> <!-- Full red box -->
+            <div class="gameLabel">Die Qual der Wahl</div> <!-- Game label inside the box -->
+            <div class="images"> <!-- Container for images -->
+                <img src="https://i.imgur.com/ecAp9KH.png" alt="Die Qual der Wahl Image" />
+            </div>
+        </div>
+
+        <!-- B 2 H Button Box -->
+        <div class="buttonBox" onclick="window.location.href='B_B2H.html'"> <!-- Full red box -->
+            <div class="gameLabel">B 2 H</div> <!-- Game label inside the box -->
+            <div class="images"> <!-- Container for images -->
+                <img src="https://i.imgur.com/SGAO9hM.png" alt="Image 1" />
+                <img src="https://i.imgur.com/0iNHOza.png" alt="Image 2" />
+                <img src="https://i.imgur.com/DU7qRU6.png" alt="Image 3" />
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
